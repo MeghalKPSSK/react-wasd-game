@@ -1,0 +1,160 @@
+/* game-area container */
+.game-area {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #121212;
+    border: 2px solid #333;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure snake is visible within the game area */
+.icon {
+    z-index: 1;
+    color: white;
+    mask: none;
+    -webkit-mask: none;
+}
+
+.mega-meal {
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(255, 215, 0, 0.6);
+}
+
+
+.snake-head {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle at center, #4caf50 60%, #3e8e41 100%);
+    border: 2px solid #2e7d32;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50%; /* Circular shape for the head */
+    z-index: 2; /* Ensures the head is above other segments */
+    position: relative;
+}
+
+.snake-head::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 50%; /* Eye shape */
+    box-shadow: 8px 0 0 #000; /* Second eye */
+}
+
+.snake-head::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #d32f2f;
+    border-radius: 50%; /* Tongue base */
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 0 6px 0 #d32f2f; /* Tongue extension */
+}
+
+/* Snake segment styling */
+.snake-segment {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #4caf50;
+    border: 1px solid #3e8e41;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+/* Button styling */
+#snake-game button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#snake-game button:hover {
+    background-color: #43a047;
+    transform: scale(1.05);
+}
+
+#snake-game button:active {
+    background-color: #388e3c;
+    transform: scale(0.95);
+}
+
+/* Food styling */
+.food {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff5722;
+    border: 1px solid #e64a19;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/* Game over text */
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Score display styling */
+.score {
+    position: absolute;
+    top: calc(50% + 80px); /* Position below the game-over text */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
