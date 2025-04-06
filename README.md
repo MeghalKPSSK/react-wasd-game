@@ -1,6 +1,6 @@
-# 🎮 React WASD Game
+# 🎮 Snake Game WASD
 
-A simple 2D game built entirely using **React** where the player moves around the screen using `W`, `A`, `S`, and `D` keys.
+A simple 2D snake game built entirely using **React** where the player moves around the screen using `W`, `A`, `S`, and `D` keys.
 
 ## 🯩 Description
 
@@ -30,8 +30,8 @@ Make sure you have Node.js and npm installed.
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/MeghalKPSSK/react-wasd-game.git
-   cd react-wasd-game
+   git clone https://github.com/MeghalKPSSK/snake-game-wasd.git
+   cd snake-game-wasd
    ```
 
 2. Install dependencies:
@@ -54,18 +54,11 @@ Make sure you have Node.js and npm installed.
 - React-based real-time updates
 - Clean structure for extending into a full game
 
-## 📌 Future Improvements
-
-- Add obstacles and enemies
-- Implement health and scoring
-- Add animations, sound effects, and levels
-- Mobile touch controls
-
 ## 🤝 Contributing
 
-Pull requests are welcome. For major changes, open an issue first to discuss what you want to improve or add.
+Just to let you know, pull requests are welcome. For major changes, you can open an issue first to discuss what you want to improve or add.
 
 ## 🔗 GitHub
 
-[https://github.com/MeghalKPSSK/react-wasd-game](https://github.com/MeghalKPSSK/react-wasd-game)
+[https://github.com/MeghalKPSSK/react-wasd-game](https://github.com/MeghalKPSSK/snake-game-wasd)
 
