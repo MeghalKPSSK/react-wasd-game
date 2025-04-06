@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Game from './components/game';
 
@@ -6,8 +5,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hello, Snake Game! Get ready to play!</p>
-        <p>Press the arrow keys to control the snake!</p>
+        <img src='/favicon.png' className="App-logo" alt="logo" />
+        <p style={{ marginTop: '-1%' }}>Hello, Welcome to Snake Game! Please use WASD keys to control the snake!</p>
         <Game />
       </header>
     </div>
