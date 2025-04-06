@@ -37,7 +37,7 @@ const Game = () => {
         megaMealTimeout.current = setTimeout(() => {
             setMegaMeal(null);
             megaMealTimeout.current = null;
-        }, 10000);
+        }, 7000);
     };
 
     const moveSnake = () => {
