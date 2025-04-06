@@ -67,4 +67,4 @@ Just to let you know, pull requests are welcome. For major changes, you can open
 
 ## 🔗 GitHub
 
-[https://github.com/MeghalKPSSK/react-wasd-game](https://github.com/MeghalKPSSK/snake-game-wasd)
+[https://github.com/MeghalKPSSK/snake-game-wasd](https://github.com/MeghalKPSSK/snake-game-wasd)
