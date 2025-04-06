@@ -56,6 +56,13 @@ Make sure you have Node.js and npm installed.
 
 ## 🤝 Contributing
 
+**This is just to play local but in case you want to build and host it please follow the below**
+
+```bash
+npm run build
+```
+- Once the build file is generated, host it on your server and enjoy.
+
 Just to let you know, pull requests are welcome. For major changes, you can open an issue first to discuss what you want to improve or add.
 
 ## 🔗 GitHub
